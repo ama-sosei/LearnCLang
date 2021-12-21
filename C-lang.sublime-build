@@ -1,0 +1,9 @@
+{
+	"selector": "source.c",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${packages}\\build_tools",
+	"windows": {
+		"shell_cmd": "start c_build.bat \"${file}\"",
+		"encoding": "utf-8"
+	}
+}
