@@ -13,8 +13,10 @@ if !errorlevel! == 0 (
 	type %~n1.err
 )
 
+pause
+
+del %~n1.err %~n1.exe > nul 2>&1
+
 popd
 endlocal
-pause
-del %~n1.err %~n1.exe > nul 2>&1
 exit
